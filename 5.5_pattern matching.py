@@ -33,7 +33,7 @@ match score:
 age = 15
 
 match age:
-    case x if x < 10:
+    case x if x < 10:       #case后面写的是模式，不是表达式，写case < 10是语法错误，得用x来捕获，也可写成case _ if age < 10
         print(f'< 10 years old: {x}')
     case 10:
         print('10 years old')
