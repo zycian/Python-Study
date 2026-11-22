@@ -141,4 +141,5 @@ d= {(1,2,3): 12, (1,[2,3]): 13}
 print(d[(1,[2,3])])
 # TypeError: cannot use 'tuple' as a dict key (unhashable type: 'list')
 ## 因为tuple里的元素不全都可哈希
-# () 里允许出现的是：数字、字符串、布尔、None、全是这些的 tuple（可套多层）。出现 list / dict / set 就不行了。
+# () 里允许出现的是：数字、字符串、布尔、None、全是这些的 tuple（可套多层）
+# 出现 list / dict / set 就不行了。
